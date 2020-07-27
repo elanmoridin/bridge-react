@@ -68,7 +68,7 @@ export default class Comment extends Component {
             { this.state.comments.map(comment => {
                 return (
                     <div  key={comment._id}>
-                    <h3>{comment.message}></h3>
+                    <h3>{comment.message}</h3>
                     
                     </div>
                 )
