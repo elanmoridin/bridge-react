@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modals from './Modals'
 
+let baseURL = 'https://bridge-app-api.herokuapp.com'
 
 export default class componentName extends Component {
 
@@ -17,7 +18,7 @@ export default class componentName extends Component {
   }
 
   findMovies= () => {
-    fetch(this.props.baseURL + '/movies').then(res => {
+    fetch(baseURL + '/movies').then(res => {
       return res.json();
     }).then(data => {
       this.setState({
@@ -34,7 +35,7 @@ export default class componentName extends Component {
 
   addMovie(event) {
     event.preventDefault();
-    fetch(this.props.baseURL + '/movies/add', {
+    fetch(baseURL + '/movies/add', {
       method: 'POST',
       body: JSON.stringify({
           title: this.state.movie.Title,
