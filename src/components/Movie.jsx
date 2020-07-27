@@ -8,7 +8,7 @@ export default class componentName extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      baseURL: 'http://www.omdbapi.com/?apikey=b764ea59&t=',
+      baseURL: 'https://www.omdbapi.com/?apikey=b764ea59&t=',
       movieTitle: '',
       searchURL: '',
       movie: null,
