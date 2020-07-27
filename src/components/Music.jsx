@@ -132,7 +132,7 @@ export default class componentName extends Component {
                     <img src={song.albumCover} />
                     <h3>Song: {song.track}</h3>
                     <h3>Album: {song.album}</h3>
-                    <a href={song.preview}>&#9658;</a> 
+                    <a href={song.preview}>&#9658; target="_blank"</a> 
                     </div>
                 )
                 })

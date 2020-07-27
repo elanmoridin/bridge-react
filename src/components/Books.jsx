@@ -131,7 +131,7 @@ export default class componentName extends Component {
             {/* rating is pulled from google books rating of books */}
             <h3>Average Rating: {this.state.books.items[0].volumeInfo.averageRating}</h3>
             {/* this is a link to a readable preview from the book */}
-            <a href={this.state.books.items[0].volumeInfo.previewLink}>Preview Here</a>
+            <a href={this.state.books.items[0].volumeInfo.previewLink} target="_blank">Preview Here</a>
             {/* button to add the book info the database and make this part of the feed */}
             <button onClick={(event) => this.addBook(event)}>Add Book to Feed</button>
           </div> 
