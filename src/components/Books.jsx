@@ -72,7 +72,7 @@ export default class componentName extends Component {
     this.setState({
       booklist: copyBooks,
     })
-    console.log(this.state.booklist)
+    // console.log(this.state.booklist)
   }
 
   // function for the submit button to pull data from the books api
@@ -88,7 +88,7 @@ export default class componentName extends Component {
         return response.json();
       }).then(data => {
         // send data to console log and to the current state object books
-        console.log(data)
+        // console.log(data)
         this.setState({
           books: data,
         })
@@ -108,9 +108,8 @@ export default class componentName extends Component {
       <>
         {/* form for looking up books from the google books api */}
         <form onSubmit={ (evt) => this.handleSubmit(evt) }>
-          <label htmlFor="bookTitle"> Book Title: </label>
           <input type="text" id="bookTitle"
-            value={ this.state.bookTitle}
+            value={ this.state.bookTitle} placeholder="Enter Book Title"
             onChange={ (evt) => this.handleChange(evt) }/>
           <input type="submit" value="Search"/>
         </form>
