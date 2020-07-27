@@ -79,7 +79,7 @@ export default class componentName extends Component {
   handleSubmit(evt) {
     // prevent refresh on default
     evt.preventDefault();
-    // set the state for searchURL which is a combo of base api / search box / apik key insert from the .env folders
+    // set the state for searchURL which is a combo of base api / search box / apik key insert from the .env folders -- issues
     this.setState({
       searchURL: this.state.baseURL + this.state.bookTitle + this.state.apiKey
     }, () => {
