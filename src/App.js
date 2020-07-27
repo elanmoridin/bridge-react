@@ -12,7 +12,12 @@ import Last from './Last.js'
 import './App.css';
 import { Switch , Route} from 'react-router-dom'
 
-let baseURL = 'http://localhost:3003'
+let baseURL
+if (process.env.NODE_ENV === 'development') {
+  baseURL = 'http://localhost:3003'
+} else {
+  baseURL = 'https://bridge-app-api.herokuapp.com/'
+}
 
 class App extends React.Component {
 
