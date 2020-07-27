@@ -145,7 +145,7 @@ export default class componentName extends Component {
                     <h2>{book.title}</h2>
                     <img className='bookImg' src={book.image} alt={book.title}/>
                     <h3>Author: {book.author}</h3>
-                    <a href={book.previewLink} target="_blank"></a>
+                    <a href={book.previewLink} target="_blank">Book Preview</a>
                     <h3>Published Year: {book.publishedDate}</h3>
                   </div>
                 )

@@ -126,7 +126,7 @@ export default class componentName extends Component {
                       <h3>Genre: {movie.genre}</h3>
                       <h3>Year: {movie.year}</h3>
                       <h3>Plot: {movie.plot}</h3> 
-                      <Modals/>
+                      {/* <Modals/> */}
                   </div>
                 
               )
