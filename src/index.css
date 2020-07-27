@@ -1,0 +1,212 @@
+/* log-in page */
+body{
+  background-color: #f77722;
+}
+.log-inPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"],input[type="submit"],[type="password"]{
+  margin: 10px;
+}
+.logo{
+  margin-bottom: 20px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+}
+.log-in{
+  display: flex;
+  margin-top: 10px;
+  background-color: rgb(100, 81, 81);
+  padding: 40px;
+}
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav-link{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #f77722;
+  transition: 0.5s;
+  height: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  
+
+}
+.nav-link:hover{
+background-color:#f77722;
+color: rgb(255, 255, 255);
+}
+h1,h2,h3,h4{
+  color: white;
+  padding-left: 5px;
+  
+}
+.share{
+  text-align: center;
+}
+
+.navbar{
+background-color: rgb(255, 255, 255);
+text-align: right;
+
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+}
+input[type="button"],input[type="submit"]{
+  display: inline-block;
+  height: 28px;
+  padding: 0 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  
+}
+
+input[type="button"]:hover,input[type="submit"]:hover,button:hover{
+      color: #f77722;
+      background-color: white;
+}
+
+input[type="text"],input[type="password"],input[type="email"],button{
+  display: inline-block;
+  height: 28px;
+  padding: 0 30px;
+  color: rgb(0, 0, 0);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+input[type="email"]{
+  margin-top: 10px;
+}
+
+.imgDiv{
+  transition: 0.7s;
+  margin: 10px;
+}
+.imgDiv:hover{
+  transform:scale(1.2) rotate(5deg);
+}
+
+
+
+/*search movie page*/
+.moviePic{
+  width: 150px;
+  height: 150px;
+}
+.movieImg{
+height: 250px;
+width: 200px;
+}
+.movies,.musics ,.book-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.musicsPreview {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: rgb(100, 81, 81);
+} 
+.musicPreview {
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: #f77722;
+  
+  padding: 5px;
+  margin-bottom: 5px;
+  padding-left: 7px;
+}
+
+.user{
+  text-align: center;
+}
+
+.movie , .music , .book{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  margin: 20px;
+  background-color: rgb(100, 81, 81);
+  
+}
+.searchMovie , .searchMusic{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.preview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+.previewImg{
+  width: 200px;
+  height: 250px;
+}
+
+.modal{
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  margin-left: 20%;
+  margin-top: 20%;
+}
