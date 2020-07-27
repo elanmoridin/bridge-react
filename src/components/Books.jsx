@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // server variables setup and clearly laid out for heroku and local use
-let serverURL = process.env.serverURL || 'http://localhost:3003'
+let serverURL = 'https://bridge-app-api.herokuapp.com'
 // set variable to the .env hidden key
 const api_book_key = process.env.api_book_key
 
