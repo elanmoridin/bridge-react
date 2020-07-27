@@ -15,7 +15,7 @@ import kobe from './img/kobe-logo.png'
 export default function Last(){
   let [scores, setScores] = useState([]);
 
-  let baseURL = 'https://bridge-app-api.herokuapp.com'
+  let base_URL = `http://localhost:3003/api/v1/updates`;
 
   /*handleChange=(evt)=>{
     this.setState({

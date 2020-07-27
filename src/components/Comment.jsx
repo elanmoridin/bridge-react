@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-let baseURL = 'https://bridge-app-api.herokuapp.com'
+let baseURL = 'http://localhost:3003';
 
 export default class Comment extends Component {
     state = {
