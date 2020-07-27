@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 let rapidapihost = "x-rapidapi-host"
 let rapidapikey = "x-rapidapi-key"
-let baseURL = 'http://localhost:3003'
+let baseURL = 'https://bridge-app-api.herokuapp.com'
 
 export default class componentName extends Component {
     state = {
