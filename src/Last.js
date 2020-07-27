@@ -15,7 +15,9 @@ import kobe from './img/kobe-logo.png'
 export default function Last(){
   let [scores, setScores] = useState([]);
 
-  let base_URL = `http://localhost:3003/api/v1/updates`;
+  let baseURL = 'https://bridge-app-api.herokuapp.com'
+  
+  let baseAPI = `/api/v1/updates`
 
   /*handleChange=(evt)=>{
     this.setState({
@@ -25,7 +27,7 @@ export default function Last(){
 
 
   useEffect(() => {
-      axios.get(base_URL)
+      axios.get(baseURL + baseAPI)
       .then(({ data }) => {
         setScores(data);
       })
