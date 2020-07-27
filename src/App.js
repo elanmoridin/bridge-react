@@ -16,7 +16,7 @@ let baseURL
 if (process.env.NODE_ENV === 'development') {
   baseURL = 'http://localhost:3003'
 } else {
-  baseURL = 'https://bridge-app-api.herokuapp.com/'
+  baseURL = 'https://bridge-app-api.herokuapp.com'
 }
 
 class App extends React.Component {
